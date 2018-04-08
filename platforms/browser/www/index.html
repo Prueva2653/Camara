@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Cámara de Delio</title>
+</head>
+
+<body>
+
+    <div class ="Cabecera">
+        <h1>Sacate la foto</h1>
+    </div>
+    <img id ="img1"  onclick="funcGuay()"/>
+    <input id ="botonCamara" type="button" value="Camara" title="Sacate una foto" onclick="sacarFoto()"/>
+
+<table class="tabla">
+  <tr>
+    <td>Bateria :</td>
+    <td id="percent"></td>
+  </tr>
+
+  <tr>
+    <td>Cargando :</td>
+    <td id="conection"></td>
+  </tr>
+
+    <tr>
+    <td>Dispositivo :</td>
+    <td id="device"></td>
+   </tr>
+
+    <tr>
+    <td>Plataforma :</td>
+    <td id="platform"></td>
+  </tr>
+
+</table>
+
+
+    <div class="app">
+
+        <div id="deviceready" class="blink">
+            <p class="event listening">Conectando al dispositivo</p>
+            <p class="event received">El dispositivo esta ok</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
